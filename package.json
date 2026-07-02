@@ -1,0 +1,20 @@
+{
+  "name": "@papercusp/resumable-download",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Generic, domain-free resumable HTTP downloader with streaming checksum verification (HTTP Range resume + incremental SHA-256), injected sink + fetch + hasher ports. Zero coupling: no fs, no fetch impl, no crypto lib baked in — pure algorithm over injected ports.",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "test": "vitest run"
+  },
+  "devDependencies": {
+    "@types/node": "^26.1.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
